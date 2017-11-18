@@ -1,0 +1,225 @@
+html, body {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #DDDDDD;
+  font-size: 1em;
+  color: #001f3f;
+}
+
+input[type=submit], button {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: #001f3f;
+  border: none;
+  border-radius: 0.5em;
+  color: #FFFFFF;
+  line-height: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+  background-color: #002a56;
+}
+
+button:disabled, button:disabled:hover,
+button.green:disabled, button.green:disabled:hover,
+button.red:disabled, button.red:disabled:hover {
+  cursor: default;
+  background-color: #444444;
+}
+
+input[type=text], input[type=password] {
+  min-width: 15em;
+  border-radius: 0.25em;
+  text-align: center;
+}
+
+input {
+  font-size: inherit;
+}
+
+button.green, button.red {
+  width: 30%;
+  overflow: hidden;
+  margin: 4% auto;
+}
+
+button.green {
+  background-color: #2ac56c;
+}
+
+button.green:hover {
+  background-color: #17aa56;
+}
+
+button.green:active {
+  background-color: #0b8b42;
+}
+
+button.red {
+  background-color: #f06060;
+}
+
+button.red:hover {
+  background-color: #cb4e4e;
+}
+
+button.red:active {
+  background-color: #ab3c3c;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  width: 45%;
+  float: left;
+  padding: 0 4px;
+}
+
+#identity-form, #user-agent {
+  clear: both;
+  height: 30%;
+  padding: 1%;
+  text-align: center;
+}
+
+#identity-form {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+}
+
+#identity-form * {
+  display: block;
+  width: 100%;
+  margin: 0 auto 0.5em auto;
+}
+
+#session-list {
+  text-align: center;
+  clear: both;
+  margin: 0 auto;
+}
+
+.session {
+  display: inline-block;
+  float: none;
+  border-radius: 0.2em;
+  border: 1px solid #0074D9;
+  text-align: center;
+  margin: 8px 8px;
+  width: 20em;
+}
+
+* h2 {
+  font-weight: bold;
+  margin: 0 0 0 0;
+  height: 1;
+}
+
+* h3 {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0 0 4% 0;
+  height: 1;
+  overflow: scroll;
+}
+
+.session video {
+  display: block;
+  visibility: none;
+  height: 0;
+  max-width: 90%;
+}
+
+.session video.on {
+  visibility: visible;
+  height: auto;
+  margin: 5% auto;
+}
+
+.session .messages {
+  max-height: 10em;
+  min-height: 2em;
+  overflow: auto;
+  margin-bottom: 1%;
+}
+
+.session .messages .local {
+  color: #0074D9;
+  clear: left;
+  float: right;
+  width: 60%;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.session .messages .remote {
+  color: #3D9970;
+  clear: right;
+  float: left;
+  width: 60%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.session .messages .error {
+  color: #FF4136;
+  clear: right;
+  float: left;
+  width: 60%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#user-agent, .started #identity-form, #templates {
+  display: none;
+}
+
+#identity-form, .started #user-agent {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TCC WebRTC</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Identity -->
+    <form id="identity-form">
+      <h2>Login</h2>
+      <label><span>Endereço SIP</span> <input type="text" id="address-input" placeholder="login@exemplo.com"/></label>
+      <label><span>Senha</span> <input type="password" id="password-input"/></label>
+      <input type="submit" value="Entrar"/>
+    </form>
+
+    <!-- User Agent -->
+    <div id="user-agent">
+      <h2><strong id="ua-display-name"></strong></h2>
+      <h3><span id="ua-uri"></span></h3>
+      <form id="new-session-form">
+        <label><input type="text" id="ua-invite-to" placeholder="contato@exemplo.com"/></label>
+        <input type="submit" id="ua-invite-submit" value="Iniciar sessão"/>
+        <!--button id="conference-button">Conferência</button-->
+      </form>
+    </div>
+
+    <!-- Sessions -->
+    <ul id="session-list"></ul>
+
+    <!-- Templates -->
+    <ul id="templates">
+      <li id="session-template" class="template session">
+        <h2><strong class="display-name"></strong></h2>
+        <h3><span class="uri"></span></h3>
+        <video autoplay>Vídeo desabilitado ou indisponível</video>
+        <ul class="messages"></ul>
+        <form class="message-form">
+          <input type="text" placeholder="Mensagem"/>
+          <input type="submit" value="Enviar"/>
+        </form>
+        <!--label>Vídeo <input type="checkbox" class="enable-video" checked/></label>
+        <button class="hold">Hold</button>
+        <button class="unhold">Unhold</button-->
+        <button class="green">Green</button>
+        <button class="red">Red</button>
+      </li>
+    </ul>
+
+    <!-- Scripts -->
+    <script src="sip-0.7.8.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
